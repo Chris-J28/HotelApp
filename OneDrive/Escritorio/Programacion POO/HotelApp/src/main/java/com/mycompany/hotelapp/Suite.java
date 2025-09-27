@@ -18,7 +18,7 @@ public class Suite extends Habitacion {
 
     @Override
     public String mostrarInfo() {
-        return "--- Suite #" + numHabi + " ---\n" +
+        return " Suite " + numHabi + " \n" +
                "Precio por noche:" + String.format("%.2f", precioNoche) + "\n" +
                "Estado: " + (reservacion ? "Ocupada" : "Libre") + "\n" +
                "Jacuzzi: " + (tieneJacuzzi ? "Si" : "No") + "\n" +
