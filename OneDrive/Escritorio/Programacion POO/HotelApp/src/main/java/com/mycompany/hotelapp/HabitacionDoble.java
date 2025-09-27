@@ -1,13 +1,24 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package com.mycompany.hotelapp;
 
 /**
  *
- * @author chris
+ * @author Emili
  */
-public class HabitacionDoble {
+public class HabitacionDoble extends Habitacion {
     
+    private int camasDobles;
+
+    // Constructor
+    public HabitacionDoble(int numHabi, double precioNoche, boolean reservacion, int camasDobles) {
+        super(numHabi, precioNoche, reservacion);
+        this.camasDobles = camasDobles;
+    }
+
+    @Override
+    public String mostrarInfo() {
+        return "--- Habitacion Doble " + numHabi + " ---\n" +
+               "Precio por noche: " + String.format("%.2f", precioNoche) + "\n" +
+               "Estado: " + (reservacion ? "Ocupada" : "Libre") + "\n" +
+               "Camas dobles: " + camasDobles;
+    }
 }
