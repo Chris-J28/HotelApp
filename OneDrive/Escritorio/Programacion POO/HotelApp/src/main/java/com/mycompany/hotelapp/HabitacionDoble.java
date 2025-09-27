@@ -16,7 +16,7 @@ public class HabitacionDoble extends Habitacion {
 
     @Override
     public String mostrarInfo() {
-        return "--- Habitacion Doble " + numHabi + " ---\n" +
+        return " Habitacion Doble " + numHabi + " \n" +
                "Precio por noche: " + String.format("%.2f", precioNoche) + "\n" +
                "Estado: " + (reservacion ? "Ocupada" : "Libre") + "\n" +
                "Camas dobles: " + camasDobles;
