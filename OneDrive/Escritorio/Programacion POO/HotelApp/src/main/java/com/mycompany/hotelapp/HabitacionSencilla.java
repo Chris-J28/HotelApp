@@ -26,7 +26,7 @@ public class HabitacionSencilla extends Habitacion {
           }else if(reservacion==false){
               estado ="Disponible";
            }
-        return "Habitación: " + numHabi
+        return "Habitacion: " + numHabi
          + " | Precio por noche: " + precioNoche
          + " | Estado: " + estado
          + " | Camas individuales: " + camasIndividuales;
