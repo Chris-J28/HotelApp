@@ -20,8 +20,19 @@ public class Suite extends Habitacion {
     public String mostrarInfo() {
         return " Suite " + numHabi + " \n" +
                "Precio por noche:" + String.format("%.2f", precioNoche) + "\n" +
-               "Estado: " + (reservacion ? "Ocupada" : "Libre") + "\n" +
+               "Estado: " + (reservacion ? "Ocupada" : "Disponible") + "\n" +
                "Jacuzzi: " + (tieneJacuzzi ? "Si" : "No") + "\n" +
                "Vista al mar: " + (tieneVistaMar ? "Si" : "No");
     }
+    @Override
+    public boolean ocupar() {
+        return super.ocupar(); }
+
+    @Override
+    public boolean liberar() {
+        return super.liberar(); }
+
+    @Override
+    public double calcularCosto(int noches) {
+        return super.calcularCosto(noches); }
 }
