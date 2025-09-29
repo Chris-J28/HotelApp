@@ -13,6 +13,8 @@ public class HabitacionDoble extends Habitacion {
         super(numHabi, precioNoche, reservacion);
         this.camasDobles = camasDobles;
     }
+    public int getCamasDobles() {
+        return camasDobles;
 
     @Override
     public String mostrarInfo() {
@@ -21,4 +23,12 @@ public class HabitacionDoble extends Habitacion {
                "Estado: " + (reservacion ? "Ocupada" : "Libre") + "\n" +
                "Camas dobles: " + camasDobles;
     }
+    @Override
+    public boolean ocupar() { return super.ocupar(); }
+
+    @Override
+    public boolean liberar() { return super.liberar(); }
+
+    @Override
+    public double calcularCosto(int noches) { return super.calcularCosto(noches); }
 }
