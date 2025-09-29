@@ -24,11 +24,14 @@ public class HabitacionDoble extends Habitacion {
                "Camas dobles: " + camasDobles;
     }
     @Override
-    public boolean ocupar() { return super.ocupar(); }
+    public boolean ocupar() { 
+        return super.ocupar(); }
 
     @Override
-    public boolean liberar() { return super.liberar(); }
+    public boolean liberar() { 
+        return super.liberar(); }
 
     @Override
-    public double calcularCosto(int noches) { return super.calcularCosto(noches); }
+    public double calcularCosto(int noches) { 
+        return super.calcularCosto(noches); }
 }
