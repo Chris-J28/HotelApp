@@ -16,7 +16,7 @@ public abstract class Habitacion {
         this.precioNoche=precioNoche;
         this.reservacion=reservacion;
     }
-    //Atributos
+    //Atributoss
     protected int numHabi;
     public int getNumHabi() {
         return numHabi;
